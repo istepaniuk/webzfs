@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+chown webzfs:webzfs /opt/webzfs/.config /opt/webzfs/.ssh
+
+systemctl daemon-reload
+systemctl enable webzfs.service
+systemctl start webzfs.service

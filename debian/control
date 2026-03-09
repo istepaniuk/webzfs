@@ -1,0 +1,8 @@
+Package: webzfs
+Version: 0.65.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Depends: python3
+Maintainer: Iván Stepaniuk <me@istepaniuk.com>
+Description: WebZFS

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+systemctl stop webzfs.service || true
+systemctl disable webzfs.service || true

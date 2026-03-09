@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+if ! id -u webzfs &>/dev/null; then
+    adduser --system --no-create-home --home /opt/webzfs \
+            --shell /bin/bash --group webzfs \
+    usermod -aG shadow webzfs
+fi
